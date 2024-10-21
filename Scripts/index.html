@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Taller TypeScript</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script type="module" src="./scripts/main.js"></script>
 </head>
 <body>
-    <h1>Listado de Series</h1>
-    <table class="table" id="seriesTableBody">
-        <thead class="thead-dark"></thead>    
-            <tr>
-                <th>#</th>
-                <th>Nombre</th>
-                <th>Canal</th>
-                <th>Temporadas</th>
-            </tr>
-        </thead>
-    </table>
+    <div class="container mt-5">
+        <h1 class="text-center">TV Series</h1>
+        <table class="table table-striped">
+            <thead class="thead-dark bg-info">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Channel</th>
+                    <th>Seasons</th>
+                </tr>
+            </thead>
+            <tbody id="seriesTableBody">
+                <!-- Aquí se inyectarán los datos de las series -->
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

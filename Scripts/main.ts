@@ -1,13 +1,14 @@
-import {series} from './data.js';
+import { series } from './data.ts';
+
+console.log(series);  // Verifica que los datos se estén importando
 
 let seriesTable: HTMLElement = document.getElementById("seriesTableBody")!;
 
-
 function mostrarSeries(): void {
     let tbodySeries = document.createElement("tbody");
-    series.forEach(serie => 
-    {
-        tbodySeries.innerHTML += `      
+
+    series.forEach(serie => {
+        tbodySeries.innerHTML += `
         <tr>
             <td>${serie.id}</td>
             <td><a href="${serie.link}" target="_blank">${serie.name}</a></td>
@@ -20,7 +21,6 @@ function mostrarSeries(): void {
 }
 
 mostrarSeries();
-
 
 
 

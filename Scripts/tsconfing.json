@@ -1,10 +1,10 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "module": "es6",
         "outDir": "./scripts",
         "rootDir": "./",
         "strict": true,
-        "alwaysStrict": true
+        "esModuleInterop": true
     }
 }
