@@ -1,7 +1,6 @@
 import { series } from './data.ts';
 
-console.log(series);  // Verifica que los datos se estén importando
-
+console.log(series);
 let seriesTable: HTMLElement = document.getElementById("seriesTableBody")!;
 
 function mostrarSeries(): void {
